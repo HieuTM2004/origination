@@ -33,4 +33,6 @@ public class ApplicationResponse {
   private String createdBy;
 
   private String updatedBy;
+
+  private ApplicantResponse applicantResponse;
 }
