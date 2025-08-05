@@ -9,7 +9,6 @@ import lombok.Setter;
 @Setter
 public class ApplicationRequest {
   @NotBlank(message = "Account number is required")
-  // add annotation for unique account number
   private String accountNumber;
 
   @NotBlank(message = "Business decision is required")
@@ -17,22 +16,8 @@ public class ApplicationRequest {
 
   private OffsetDateTime contractDate;
 
-  //  private OffsetDateTime createdTime;
-
   @NotBlank(message = "Merchandise type is required")
   private String merchandiseType;
 
-  //  private OffsetDateTime productSelectedTimestamp;
-
-  //  private UUID selectedOfferUuid;
-
-  //  private OffsetDateTime ssnCollectedTimestamp;
-
   private Integer status;
-
-  //  private OffsetDateTime updatedTime;
-
-  //  private String createdBy;
-
-  //  private String updatedBy;
 }

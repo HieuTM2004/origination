@@ -10,7 +10,6 @@ import lombok.Setter;
 public class AddressRequest {
   @NotBlank(message = "Phone number is required")
   @Pattern(regexp = "^\\+?[0-9]{9,15}$", message = "Invalid mobile number")
-  // add annotation for unique phoneNumber
   private String phoneNumber;
 
   @NotBlank(message = "Address line 1 is required")
@@ -19,7 +18,6 @@ public class AddressRequest {
   private String addressLine2;
 
   @NotBlank(message = "Zip code is required")
-  // add annotation for unique zip code
   private String zipCode;
 
   @NotBlank(message = "City is required")

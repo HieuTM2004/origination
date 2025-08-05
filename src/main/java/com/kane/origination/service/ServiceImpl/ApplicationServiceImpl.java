@@ -64,8 +64,6 @@ public class ApplicationServiceImpl implements ApplicationService {
 
     applicant.setAddresses(address);
 
-    //    applicantRepo.save(applicant);
-
     Application application =
         this.applicationMapper.toApplication(
             applicationWithApplicantRequest.getApplicationRequest());
